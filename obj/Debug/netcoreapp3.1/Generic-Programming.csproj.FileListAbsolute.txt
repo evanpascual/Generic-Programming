@@ -1,0 +1,13 @@
+C:\Users\knmar\Desktop\school\fall2020\cecs342\Generic-Programming\obj\Debug\netcoreapp3.1\Generic-Programming.csprojAssemblyReference.cache
+C:\Users\knmar\Desktop\school\fall2020\cecs342\Generic-Programming\obj\Debug\netcoreapp3.1\Generic-Programming.AssemblyInfoInputs.cache
+C:\Users\knmar\Desktop\school\fall2020\cecs342\Generic-Programming\obj\Debug\netcoreapp3.1\Generic-Programming.AssemblyInfo.cs
+C:\Users\knmar\Desktop\school\fall2020\cecs342\Generic-Programming\obj\Debug\netcoreapp3.1\Generic-Programming.csproj.CoreCompileInputs.cache
+C:\Users\knmar\Desktop\school\fall2020\cecs342\Generic-Programming\bin\Debug\netcoreapp3.1\Generic-Programming.exe
+C:\Users\knmar\Desktop\school\fall2020\cecs342\Generic-Programming\bin\Debug\netcoreapp3.1\Generic-Programming.deps.json
+C:\Users\knmar\Desktop\school\fall2020\cecs342\Generic-Programming\bin\Debug\netcoreapp3.1\Generic-Programming.runtimeconfig.json
+C:\Users\knmar\Desktop\school\fall2020\cecs342\Generic-Programming\bin\Debug\netcoreapp3.1\Generic-Programming.runtimeconfig.dev.json
+C:\Users\knmar\Desktop\school\fall2020\cecs342\Generic-Programming\bin\Debug\netcoreapp3.1\Generic-Programming.dll
+C:\Users\knmar\Desktop\school\fall2020\cecs342\Generic-Programming\bin\Debug\netcoreapp3.1\Generic-Programming.pdb
+C:\Users\knmar\Desktop\school\fall2020\cecs342\Generic-Programming\obj\Debug\netcoreapp3.1\Generic-Programming.dll
+C:\Users\knmar\Desktop\school\fall2020\cecs342\Generic-Programming\obj\Debug\netcoreapp3.1\Generic-Programming.pdb
+C:\Users\knmar\Desktop\school\fall2020\cecs342\Generic-Programming\obj\Debug\netcoreapp3.1\Generic-Programming.genruntimeconfig.cache
