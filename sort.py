@@ -29,16 +29,19 @@ people.append(Person("Benny", 28))
 people.append(Person("Juan", 33))
 people.append(Person ("Natalie", 25))
 
+#sorts a list using any attribute its called on. it also 
+def multisort(list, attributes):
+    for attribute, reverse in reversed(attributes): #pulls the attribute and whether it should be reverse sorted
+        list.sort(key = attrgetter(attribute), reverse = reverse) #uses built in sort method to take in key value and whether it should be in reverse
+    return list
 
 def main():
   print("Unsorted Numbers: ", numbers)
   print("Sorted Numbers:   ", sorted(numbers)) #uses the built-in sort function for the numbers
   print("")
   print("People Sorted By Name: ")
-  print(sorted(people, key = attrgetter('name'))) #uses the attrgetter to sort the list of objects by "name" attribute
+  print(sorted(people, key=attrgetter('name'))) #sorts alphabettically 
   print("")
-  sortByAge = sorted(people, key=attrgetter('age'), reverse = True) #uses the attrgetter to sort the list of objects in reverse order by "age" attribute 
-  sorted(sortByAge, key=attrgetter('name')) 
   print("People Sorted By Descending Age + Alphabetically By Name: ")
-  print(sortByAge)
+  print(multisort(list(people), (('age', True), ('name', False))))  #uses multisort function to take in a list of people and sort first by age in reverse and name not in reverse
 main()
