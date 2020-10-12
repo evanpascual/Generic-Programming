@@ -29,11 +29,11 @@ people.append(Person("Benny", 28))
 people.append(Person("Juan", 33))
 people.append(Person ("Natalie", 25))
 
-#sorts a list using any attribute its called on. it also 
+#sorts a list using any attribute its called on
 def multisort(list, attributes):
     for attribute, reverse in reversed(attributes): #pulls the attribute and whether it should be reverse sorted
         list.sort(key = attrgetter(attribute), reverse = reverse) #uses built in sort method to take in key value and whether it should be in reverse
-    return list
+    return list #returns the sorted list
 
 def main():
   print("Unsorted Numbers: ", numbers)
