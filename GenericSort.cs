@@ -25,7 +25,7 @@ namespace cecs{
     static void Main(String[] args){
         List<double> numbers = new List<double>() {645.32, 37.40, 76.30, 5.40, -34.23, 1.11, -34.94, 23.37, 635.46, -876.22, 467.73, 62.26}; //list of numbers
 
-        IList<Person> people = new List<Person>(){ //List of people with person's name and age
+        List<Person> people = new List<Person>(){ //List of people with person's name and age
             new Person("Hal",20),
             new Person("Susann",31),
             new Person("Dwight",19),
@@ -84,7 +84,7 @@ namespace cecs{
         //sorting people descending by age where people of the same age are sorted lexicographically
         var orderbyAge = people.OrderByDescending( per => per.Age).ThenBy(per =>per.Name);
 
-      //prints sorted list of people by desceding of age
+      //prints sorted list of people by desceding of age and ascending of name when they are the same age
         Console.WriteLine("Sorted People by Age (Descending): ");
         foreach(var Person in orderbyAge){
             Console.WriteLine(Person.toString());
