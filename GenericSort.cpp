@@ -4,6 +4,7 @@
 
 using namespace std;
 
+//data structure
   struct Person {
     string name;
     int age;
@@ -14,7 +15,8 @@ using namespace std;
     return (person.name < otherPerson.name);
   }
   
-  //is this person older than the other person? if the same age, is this person's name alphabetically less than this other person's name? 
+  //is this person older than the other person? OR if the same age, is this person's name alphabetically less than this other person's name?
+  //if false, put the
   bool sortByAge(Person person, Person otherPerson) {
     return (person.age > otherPerson.age) ||
     (person.age == otherPerson.age && sortByName(person, otherPerson));
@@ -54,24 +56,27 @@ int main() {
     int sizeNum = sizeof(numbers)/sizeof(numbers[0]);
     cout << "Sort numbers in descending order: " << endl;
     //generic sort function from the <algorithm> library
-    //this takes in the array, and the array size and sorts in descending order.
+    //this takes in the array which points to the first element, and array + size of the array which points to the last element of the array => sorts in descending order.
     sort(numbers, numbers + sizeNum);
-    for (int i = 0; i < sizeNum; i++) 
+    for (int i = 0; i < sizeNum; i++) //print to the console
       cout << numbers[i] << endl; 
     cout << "\n\n";
 
     int sizePeople = sizeof(people)/sizeof(people[0]);
     cout << "Sort people by name: " << endl;
     //generic sort function from the <algorithm> library
-    //this takes in the array, array size, and a function for what the elements are compared to
+    //the third parameter is a compare function for what the elements are compared to, which is by name.
     sort(people, people + sizePeople, sortByName);
     printPersonList(people, sizePeople);
 
     cout << "\n\n";
     cout << "Sort people descending by age: " << endl;
     //generic sort function from the <algorithm> library
-    //this takes in the array, array size, and a function for what the elements are compared to
+    //the third parameter is a compare function for what the elements are compared to, which is by age and name if the age is the same.
     sort(people, people + sizePeople, sortByAge);
     printPersonList(people, sizePeople);
 
 }
+
+//reference: http://www.cplusplus.com/reference/algorithm/sort/
+//reference: http://www.cplusplus.com/articles/NhA0RXSz/
